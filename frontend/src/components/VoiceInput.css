@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.voice-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+
+
+}
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:rgb(54, 54, 54);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.logout-button:hover {
+    background-color: #000000; 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.transcription-area {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.interim-transcription {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.voice-logo {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.voice-logo.listening {
+    transform: scale(1.2); /* Increase size */
+}
+
+
+.reminder-list {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.reminder-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    
+}
+
+.delete-button img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.delete-button img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
