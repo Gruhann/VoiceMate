@@ -9,7 +9,7 @@ const auth = require('./routes/auth');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/smartAssistant', {
+mongoose.connect('mongodb+srv://god:test1234@clusterblogs.yhoepuw.mongodb.net/?retryWrites=true&w=majority&appName=ClusterBlogs', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
